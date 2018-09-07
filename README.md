@@ -1,8 +1,8 @@
-# Scentbird Test Task
+# Valeriya van Hasselt
 run application
 ```
 yarn install
-yarn run server
+yarn server
 ```
 
-visit http://localhost:3000
+visit http://localhost:4000
