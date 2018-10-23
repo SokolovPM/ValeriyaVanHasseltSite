@@ -30,12 +30,9 @@ const Prices = () => (
   <Container>
     <Header>Prices</Header>
     <Header>6 courses & 3 lessons packages</Header>
-    <GreyLine />
+    <Header>“Abundance of choice is power in itself” - V. Van Hasselt</Header>
     <RedLine />
     <Text>
-    <p><Quote>“Abundance of choice is power in itself”</Quote> - V. Van Hasselt<br />
-    You can choose to study English with me based on regular lessons during which we will cover<br />
-    step by step everything and lift your level overal.</p>
     <RedTitle>8 lessons package</RedTitle>
     <p>280 euro<br />
     2 months to use<br />
@@ -53,8 +50,8 @@ const Prices = () => (
 
     <RedTitle>Grammar course</RedTitle>
     <Paragraph>12 tenses, Direct and Indirect speech, Conditionals 5 types<br />
-    8 lessons for 12 tenses, 2 lessons for Direct and Indirect speech and 10 lessons for<br />
-    all Conditionals</Paragraph>
+    8 lessons for 12 tenses, 2 lessons for Direct and Indirect speech and 10 lessons for all<br />
+    Conditionals</Paragraph>
     <Title>24 lessons package (2 lessons per week)</Title>
     <span>840 euro</span>
     <Title>12 lessons package</Title>
@@ -84,8 +81,8 @@ const Prices = () => (
     <br />
 
     <RedTitle>Speaking</RedTitle>
-    <Paragraph>Giving a presentation skill, monologue, giving a talk on a specific topic, speak<br />
-    withtin a limit </Paragraph>
+    <Paragraph>Giving a presentation skill, monologue, giving a talk on a specific topic, speak withtin a <br />
+    limit </Paragraph>
     <Title>15 lessons</Title>
     <span>525 euro</span>
     <Title>10 lessons</Title>
@@ -103,7 +100,7 @@ const Prices = () => (
     <br />
 
     <RedTitle>Vocabulary boost</RedTitle>
-    <Paragraph>Reading articles, listening to lectures, Cambridge student books exercise</Paragraph>
+    <Paragraph>Reading articles, listening to lectures, Cambridge student books exercise completion</Paragraph>
     <Title>8 lessons</Title>
     <span>280 euro</span>
     <Title>4 lessons</Title>

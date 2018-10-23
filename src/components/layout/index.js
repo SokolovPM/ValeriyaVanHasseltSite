@@ -54,7 +54,25 @@ class Layout extends Component {
     return (
       <Container>
         <Header>
-          <Image width="800" src="/public/images/book.png" />
+
+          {(this.props.location.pathname === '/' || this.props.location.pathname.includes('/home')) &&
+            <Image width="100%" src="/public/images/home.jpg" />
+          }
+          {this.props.location.pathname.includes('/news') &&
+            <Image width="800" src="/public/images/book.png" />
+          }
+          {this.props.location.pathname.includes('/lesson') &&
+            <Image width="100%" src="/public/images/lessons.jpg" />
+          }
+          {this.props.location.pathname.includes('/videos') &&
+            <Image width="800" src="/public/images/book.png" />
+          }
+          {this.props.location.pathname.includes('/prices') &&
+            <Image width="100%" src="/public/images/prices.jpg" />
+          }
+          {this.props.location.pathname.includes('/contact') &&
+            <Image width="800" src="/public/images/book.png" />
+          }
         </Header>
         <Wrapper>
           <MenuWrapper>

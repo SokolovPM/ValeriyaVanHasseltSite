@@ -1,0 +1,5 @@
+yarn run v1.2.1
+warning You are using Node "9.5.0" which is not supported and may encounter bugs or unexpected behavior. Yarn supports the following semver range: "^4.8.0 || ^5.7.0 || ^6.2.2 || ^8.0.0"
+$ node server
+Listening at http://localhost:4000
+webpack built caf9156c536b1f5d00ac in 2102ms

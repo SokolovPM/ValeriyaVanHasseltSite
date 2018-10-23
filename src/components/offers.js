@@ -19,13 +19,13 @@ const Offers = () => (
     <Text>
       <p>I offer you a variety of lessons and courses.</p>
       <p>1.You can choose to study English with me based on regular lessons during which we will<br />
-      cover step by step everything and lift your level overal.</p>
+      cover step by step everything and improve your level all-round.</p>
       <p>Firstly, I always check student’s level of English during our first “introduction lesson” free<br />
-      of charge. I ask a student to read, speak and listen, tell me about him/herself. Based on<br />
-      this interview I can build a scheme and an individual program. I can recommend you what<br />
+      of charge. I ask a student to read, speak and listen, tell me about him/herself. Based on this<br />
+      interview I can build a scheme and an individual program. I can recommend you what<br />
       course you should take or how many lessons in total you need or how many lessons a<br />
-      week you should have. Mind, these are all only my recommendation, in the end of the day,<br />
-      you should make a decision yourself.</p>
+      week you should have. Mind, these are all only my recommendation, eventually, you<br />
+      should make a decision yourself.</p>
       <p>You can choose:</p>
       <p>8 lessons package<br />
       4 lessons package<br />
@@ -34,16 +34,17 @@ const Offers = () => (
 
 
       <p>Most students choose 8 lessons package and go for 2 lessons a week. Regularity is<br />
-      important for efficiency.</p>
-      <p>2. You can also choose to improve a particular skill in English language.</p>
+      important in terms of efficiency.</p>
+      <p>2. You can also choose to improve a particular skill in English.</p>
     </Text>
     <SubHeader>Grammar course</SubHeader>
     <Text>
       <p>In this course we cover:</p>
       <p>12 tenses, Direct and Indirect speech, Conditionals 5 types<br />
-      8 lessons for 12 tenses, 2 lessons for Direct and Indirect speech and 10 lessons for all<br />Conditionals</p>
+      8 lessons for 12 tenses, 2 lessons for Direct and Indirect speech and 10 lessons for all<br />
+      Conditionals</p>
       <p>This course is quiet intensive. The number of lessons indicated for each topic is very<br />
-      approximate since every student works at his\her own pace!</p>
+      approximate since every student works at his/her own pace!</p>
       <p>You can choose:</p>
       <p>24 lessons package (2 lessons a week)<br />
       12 lessons package<br />
@@ -71,7 +72,7 @@ const Offers = () => (
     <Text>
       <p>In this course we will cover:</p>
       <p>Giving a presentation skill, monologue, giving a talk on a specific topic, speak within a<br />
-        limit, casual conversation</p>
+        time limit, casual conversation</p>
       <p>You can choose:</p>
       <p>15 lessons package<br />
       10 lessons package</p>

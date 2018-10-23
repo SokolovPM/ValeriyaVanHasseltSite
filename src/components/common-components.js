@@ -4,8 +4,8 @@ import styled from 'styled-components';
 export const Container = styled.div`
   font-size: 16px;
   text-align: center;
-  font-style: italic;
-  color: grey;
+  // font-style: italic;
+  // color: grey;
 `;
 
 export const Image = styled.img`
