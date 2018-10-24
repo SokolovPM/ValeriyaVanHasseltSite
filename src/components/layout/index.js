@@ -49,8 +49,27 @@ const Footer = styled.div`
   height: 100px;
 `;
 
+const LanguageSelector = styled.div`
+  display: flex;
+  margin-left: 40px;
+  margin-bottom: 20px;
+`;
+
+const Lang = styled.div`
+  width: 30px;
+  text-align: center;
+  ${props => props.selected ? 'color: red' : 'color: black'};
+  cursor: pointer;
+`;
+
 class Layout extends Component {
+  state = {
+    lang: 'EN'
+  }
+
   render() {
+    const lang = this.state.lang;
+    console.log('lang', this.state);
     return (
       <Container>
         <Header>
@@ -76,33 +95,37 @@ class Layout extends Component {
         </Header>
         <Wrapper>
           <MenuWrapper>
+            <LanguageSelector>
+              <Lang onClick={() => this.setState({ lang: 'EN' })} selected={lang === 'EN'}>EN</Lang>
+              <Lang onClick={() => this.setState({ lang: 'RU' })} selected={lang === 'RU'}>RU</Lang>
+            </LanguageSelector>
             <Menu>
-              <LinkWrapper><Link href="/">Home</Link></LinkWrapper>
-              <LinkWrapper><Link href="/news">News</Link></LinkWrapper>
-              <LinkWrapper><Link href="/lesson">Lesson&Courses</Link></LinkWrapper>
-              <LinkWrapper><Link href="/videos">Videos</Link></LinkWrapper>
-              <LinkWrapper><Link href="prices">Prices</Link></LinkWrapper>
-              <LinkWrapper><Link href="/contact">Contact</Link></LinkWrapper>
+              <LinkWrapper><Link href="/">{ lang === 'EN' ? 'Home' : 'Домашняя'}</Link></LinkWrapper>
+              <LinkWrapper><Link href="/news">{ lang === 'EN' ? 'News' : 'Новости'}</Link></LinkWrapper>
+              <LinkWrapper><Link href="/lesson">{ lang === 'EN' ? 'Lesson&Courses' : 'Уроки & Курсы'}</Link></LinkWrapper>
+              <LinkWrapper><Link href="/videos">{ lang === 'EN' ? 'Videos' : 'Видео'}</Link></LinkWrapper>
+              <LinkWrapper><Link href="/prices">{ lang === 'EN' ? 'Prices' : 'Цены'}</Link></LinkWrapper>
+              <LinkWrapper><Link href="/contact">{ lang === 'EN' ? 'Contact' : 'Контакты'}</Link></LinkWrapper>
             </Menu>
           </MenuWrapper>
           <Content>
             {(this.props.location.pathname === '/' || this.props.location.pathname.includes('/home')) &&
-              <Home />
+              <Home lang={lang} />
             }
             {this.props.location.pathname.includes('/news') &&
-              <News />
+              <News lang={lang} />
             }
             {this.props.location.pathname.includes('/lesson') &&
-              <Offers />
+              <Offers lang={lang} />
             }
             {this.props.location.pathname.includes('/videos') &&
-              <Videos />
+              <Videos lang={lang} />
             }
             {this.props.location.pathname.includes('/prices') &&
-              <Prices />
+              <Prices lang={lang} />
             }
             {this.props.location.pathname.includes('/contact') &&
-              <Contact />
+              <Contact lang={lang} />
             }
           </Content>
           <Left />

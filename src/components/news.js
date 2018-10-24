@@ -11,12 +11,23 @@ import {
   Title
 } from './common-components';
 
-const News = () => (
-  <Container>
-    <Header>News</Header>
-    <GreyLine />
-    <RedLine />
-  </Container>
+const News = ({ lang }) => (
+  <div>
+    { lang === 'EN' ?
+      <Container>
+        <Header>News</Header>
+        <GreyLine />
+        <RedLine />
+      </Container>
+      :
+      <Container>
+        <Header>Новости</Header>
+        <GreyLine />
+        <RedLine />
+      </Container>
+    }
+  </div>
+
 )
 
 export default News;
