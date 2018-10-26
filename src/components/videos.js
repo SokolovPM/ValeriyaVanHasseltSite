@@ -12,7 +12,7 @@ import {
 
 const Videos = ({ lang }) => (
   <div>
-    { lang === 'EN' ?
+    { lang === '?lang=EN' ?
       <Container>
         <Header>Videos</Header>
         <GreyLine />

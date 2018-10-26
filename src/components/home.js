@@ -12,10 +12,9 @@ import {
 
 const Home = ({ lang }) => (
   <Container>
-    {console.log('render', lang)}
     <GreyLine />
     <RedLine />
-    { lang === 'EN' ?
+    { lang === '?lang=EN' ?
       <Text>
         <p style={{ 'fontStyle': 'italic' }}>“It is more than just a skill, it is an opportunity, it is your<br />
         tool! It makes you independent! It is your knowledge, it is<br />

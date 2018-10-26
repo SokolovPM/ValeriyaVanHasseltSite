@@ -13,7 +13,7 @@ import {
 
 const Contact = ({ lang }) => (
   <div>
-    { lang === 'EN' ?
+    { lang === '?lang=EN' ?
       <Container>
         <Header>Contact</Header>
         <GreyLine />

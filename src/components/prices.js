@@ -28,7 +28,7 @@ const Paragraph = styled.p`
 
 const Prices = ({ lang }) => (
   <div>
-    { lang === 'EN' ?
+    { lang === '?lang=EN' ?
       <Container>
         <Header>Prices</Header>
         <Header>6 courses & 3 lessons packages</Header>

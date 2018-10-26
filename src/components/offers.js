@@ -13,7 +13,7 @@ import {
 
 const Offers = ({ lang }) => (
   <div>
-    { lang === 'EN' ?
+    { lang === '?lang=EN' ?
       <Container>
         <Header>Lesson & Courses</Header>
         <GreyLine />

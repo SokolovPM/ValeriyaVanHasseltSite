@@ -63,13 +63,17 @@ const Lang = styled.div`
 `;
 
 class Layout extends Component {
-  state = {
-    lang: 'EN'
+
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      lang: this.props.location.search || '?lang=EN'
+    }
   }
 
   render() {
     const lang = this.state.lang;
-    console.log('lang', this.state);
     return (
       <Container>
         <Header>
@@ -96,16 +100,16 @@ class Layout extends Component {
         <Wrapper>
           <MenuWrapper>
             <LanguageSelector>
-              <Lang onClick={() => this.setState({ lang: 'EN' })} selected={lang === 'EN'}>EN</Lang>
-              <Lang onClick={() => this.setState({ lang: 'RU' })} selected={lang === 'RU'}>RU</Lang>
+              <Lang onClick={() => this.setState({ lang: '?lang=EN'})} selected={lang === '?lang=EN'}>EN</Lang>
+              <Lang onClick={() => this.setState({ lang: '?lang=RU'})} selected={lang === '?lang=RU'}>RU</Lang>
             </LanguageSelector>
             <Menu>
-              <LinkWrapper><Link href="/">{ lang === 'EN' ? 'Home' : 'Домашняя'}</Link></LinkWrapper>
-              <LinkWrapper><Link href="/news">{ lang === 'EN' ? 'News' : 'Новости'}</Link></LinkWrapper>
-              <LinkWrapper><Link href="/lesson">{ lang === 'EN' ? 'Lesson&Courses' : 'Уроки & Курсы'}</Link></LinkWrapper>
-              <LinkWrapper><Link href="/videos">{ lang === 'EN' ? 'Videos' : 'Видео'}</Link></LinkWrapper>
-              <LinkWrapper><Link href="/prices">{ lang === 'EN' ? 'Prices' : 'Цены'}</Link></LinkWrapper>
-              <LinkWrapper><Link href="/contact">{ lang === 'EN' ? 'Contact' : 'Контакты'}</Link></LinkWrapper>
+              <LinkWrapper><Link href={`/${lang}`}>{ lang === '?lang=EN' ? 'Home' : 'Домашняя'}</Link></LinkWrapper>
+              <LinkWrapper><Link href={`/news/${lang}`}>{ lang === '?lang=EN' ? 'News' : 'Новости'}</Link></LinkWrapper>
+              <LinkWrapper><Link href={`/lesson/${lang}`}>{ lang === '?lang=EN' ? 'Lesson&Courses' : 'Уроки & Курсы'}</Link></LinkWrapper>
+              <LinkWrapper><Link href={`/videos/${lang}`}>{ lang === '?lang=EN' ? 'Videos' : 'Видео'}</Link></LinkWrapper>
+              <LinkWrapper><Link href={`/prices/${lang}`}>{ lang === '?lang=EN' ? 'Prices' : 'Цены'}</Link></LinkWrapper>
+              <LinkWrapper><Link href={`/contact/${lang}`}>{ lang === '?lang=EN' ? 'Contact' : 'Контакты'}</Link></LinkWrapper>
             </Menu>
           </MenuWrapper>
           <Content>
@@ -139,4 +143,4 @@ class Layout extends Component {
   }
 }
 
-export default Layout
+export default Layout;

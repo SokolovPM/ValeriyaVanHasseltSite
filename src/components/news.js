@@ -13,7 +13,7 @@ import {
 
 const News = ({ lang }) => (
   <div>
-    { lang === 'EN' ?
+    { lang === '?lang=EN' ?
       <Container>
         <Header>News</Header>
         <GreyLine />
